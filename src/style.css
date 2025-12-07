@@ -22,23 +22,22 @@ header {
 }
 
 .search-form-input {
-    background-color: f9f7fe;
-    border: none;
-    border-radius: 6px;
-    max-width: 80%;
-    padding: 15px 20px;
-    font-size: 16px;
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
 }
 
 .search-form-button {
-    background: purple;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 6px;
-    margin-left: 5px;
-    font-size: 16px;
-    color: white;
-
+  background: #885df1;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
 }
 
 
