@@ -40,6 +40,10 @@ header {
   color: white;
 }
 
+.weather-app-data {
+    display: flex;
+}
+
 
 footer {
   border-top: 1px solid #f9f7fe;
