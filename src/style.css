@@ -74,3 +74,19 @@ footer {
 .weather-app-temp-container {
   display: flex;
 }
+
+.weather-app-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.weatehr-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+
+.weather-app-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
