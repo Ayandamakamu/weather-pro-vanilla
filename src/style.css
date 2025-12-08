@@ -40,6 +40,11 @@ header {
   color: white;
 }
 
+.search-form-button:hover {
+  background: #6e46d9;
+  cursor: pointer;
+}
+
 main {
     padding: 30px 0;
 }
@@ -66,9 +71,9 @@ main {
   color: #f65282;
 }
 
-
 .weather-app-temperature-container {
   display: flex;
+  align-items: center;
 }
 
 .weather-app-temperature {
@@ -77,10 +82,12 @@ main {
   font-weight: bold;
 }
 
-.weatehr-app-unit {
+.weather-app-unit {
   margin-top: 16px;
   font-size: 28px;
 }
+
+
 
 .weather-app-icon {
   font-size: 44px;
@@ -93,4 +100,8 @@ footer {
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+{
+  box-sizing: border-box;
 }
