@@ -1,3 +1,15 @@
+function formatDate(timestamp) {
+  let date = new Date(timestamp * 1000);
+
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let day = days[date.getDay()];
+
+  let hours = date.getHours().toString().padStart(2, "0");
+  let minutes = date.getMinutes().toString().padStart(2, "0");
+
+  return `${day} ${hours}:${minutes}`;
+}
+
 function refreshWeather(response) {
   console.log(response.data);
 
@@ -28,3 +40,25 @@ function refreshWeather(response) {
     />
   `;
 }
+
+
+function searchCity(city) {
+  let apiKey = "9d2c884b070b3efb5t3adc74bo030ac1";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+
+  axios.get(apiUrl)
+    .then(refreshWeather)
+    .catch((error) => console.log("API ERROR:", error));
+}
+
+function handleSearchSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-form-input");
+  searchCity(searchInput.value);
+}
+
+document.querySelector("#search-form").addEventListener("submit", handleSearchSubmit);
+
+
+searchCity("Durban");
+
