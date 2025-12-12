@@ -26,12 +26,12 @@ function refreshWeather(response) {
     data.temperature.current
   );
 
-  
-  document.querySelector("#details").innerHTML = `
-    ${formatDate(data.time)}, ${data.condition.description}<br>
-    Humidity: <strong>${data.humidity}%</strong>, 
-    Wind: <strong>${data.wind.speed}km/h</strong>
-  `;
+document.querySelector("#details").innerHTML = `
+  ${formatDate(data.time)}, ${data.condition.description}<br>
+  Humidity: <strong>${data.temperature.humidity}%</strong>, 
+  Wind: <strong>${Math.round(data.wind.speed * 3.6)}km/h</strong>
+`;
+
 
 
   document.querySelector("#icon").innerHTML = `
