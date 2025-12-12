@@ -62,43 +62,45 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
-  line-height: 24px;
+  color: rgba(39, 33, 66, 0.6);
+  line-height: 26px;
   font-weight: 500;
+  margin-top: 8px;
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: #f65282; 
 }
+
 
 .weather-app-temperature-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start; 
 }
 
 .weather-app-temperature {
   font-size: 88px;
   margin-left: 10px;
   font-weight: bold;
+  line-height: 1; 
 }
 
 .weather-app-unit {
-  margin-top: 16px;
   font-size: 28px;
-   width: 80px;
-  height: 80px;
   position: relative;
-  top: -10px;   /* move it up */
-  font-size: 24px; 
-
+  top: -8px; 
+  margin-left: 4px;
 }
 
 
 
-.weather-app-icon {
-  font-size: 44px;
-  margin-top: 22px;
+
+.weather-app-icon img {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
 }
+
 
 footer {
   border-top: 1px solid #f9f7fe;
