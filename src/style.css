@@ -40,9 +40,12 @@ body {
   font-size: 18px;
 }
 
-.weather-app-data > div:first-child {
-  padding-right: 20px;
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 
 .weather-app-city {
@@ -69,8 +72,11 @@ body {
 .weather-app-temperature-container {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  justify-content: flex-end;
+  min-width: 200px; 
 }
+
 
 .weather-app-icon img {
   width: 70px;
