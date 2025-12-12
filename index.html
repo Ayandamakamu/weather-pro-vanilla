@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>Weather App</title>
 </head>
 <body>
-    <div class="weather-pro-vanilla">
+  <div class="weather-pro-vanilla">
     <header>
-        <form id="search-form" class="search-form">
-  <input 
-    type="search" 
-    placeholder="Enter a city..." 
-    required 
-    id="search-form-input"
-    class="search-form-input"
-  />
-  <input type="submit" value="search" class="search-form-button" />
-</form>
-
+      <form id="search-form" class="search-form">
+        <input
+          type="search"
+          id="search-form-input"
+          class="search-form-input"
+          placeholder="Enter a city..."
+          required
+        />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
     </header>
+
     <main>
-       <div class="weather-app-data">
-  <div>
-   <h1 id="city" class="weather-app-city">Durban</h1>
-   <p class="weather-app-details">
-   <span id="time"></span>,
-   <span id="description"></span>
-</p>
+      <div class="weather-app-data">
 
-  </div>
+        <div>
+          <h1 id="city" class="weather-app-city">City</h1>
+          <p class="weather-app-details" id="details"></p>
+        </div>
 
-  <div class="weather-app-temperature-container">
-    <div class="weather-app-icon"></div>
-    <div id="temperature" class="weather-app-temperature">26</div>
-    <div class="weather-app-unit">°C</div>
-  </div>
-</div>
+      
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-icon" id="icon"></div>
+          <div id="temperature" class="weather-app-temperature">0</div>
+          <div class="weather-app-unit">°C</div>
+        </div>
+
+      </div>
     </main>
-  <footer>
+
+    <footer>
       This project was coded by
-      <a href="https://github.com/Ayandamakamu" target="_blank"> Ayanda Makamu</a>,
+      <a href="https://github.com/Ayandamakamu" target="_blank">Ayanda Makamu</a>,
       is
       <a href="https://github.com/Ayandamakamu/weather-pro-vanilla" target="_blank"
         >open-sourced on GitHub</a
@@ -53,12 +57,11 @@
       and
       <a href="https://illustrious-pegasus-8f34c0.netlify.app/" target="_blank"
         >hosted on Netlify</a
-      >
+      >.
     </footer>
-</div>
- 
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
- <script src="src/index.js"></script>
-  
+  <script src="src/index.js"></script>
 </body>
 </html>
