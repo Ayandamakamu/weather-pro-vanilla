@@ -1,69 +1,44 @@
-
- {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+  background: #f6f3ff;
+  padding: 40px 20px;
 }
-
-a {
-  color: #885df1;
-}
-
 
 .weather-pro-vanilla {
-  background: white;
   max-width: 700px;
-  margin: 50px auto;
-  padding: 40px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(65, 50, 100, 0.1);
-}
-
-
-header {
-  border-bottom: 1px solid #f0ecfc;
-  padding-bottom: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 
 .search-form {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .search-form-input {
   flex: 1;
-  background-color: #f3effd;
-  border: none;
+  padding: 14px 18px;
   border-radius: 10px;
-  font-size: 17px;
-  padding: 16px 22px;
+  border: 1px solid #eee;
+  background: #eef3ff;
+  font-size: 18px;
 }
 
 .search-form-button {
-  background: #885df1;
-  border: none;
-  padding: 16px 32px;
-  border-radius: 10px;
-  font-size: 17px;
+  background: #8a63f8;
   color: white;
-  transition: 0.2s;
-}
-
-.search-form-button:hover {
-  background: #7448d4;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 18px;
 }
 
-
-main {
-  padding: 30px 0;
-}
 
 .weather-app-data {
   display: flex;
@@ -71,4 +46,52 @@ main {
   align-items: center;
 }
 
+.weather-app-city {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
+.weather-app-details {
+  font-size: 18px;
+  color: #666;
+}
+
+.weather-app-details strong,
+.weather-app-details span {
+  color: #d9539c;
+  font-weight: 500;
+}
+
+
+.weather-app-temperature-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather-app-icon img {
+  width: 70px;
+}
+
+.weather-app-temperature {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.weather-app-unit {
+  font-size: 32px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #8a63f8;
+}
