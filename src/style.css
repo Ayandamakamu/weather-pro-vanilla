@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: #f6f3ff;
   padding: 40px 20px;
+  margin: 0;
 }
 
 .weather-pro-vanilla {
@@ -39,23 +40,24 @@ body {
   font-size: 18px;
 }
 
-
-.weather-app-data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.weather-app-data > div:first-child {
+  padding-right: 20px;
 }
+
 
 .weather-app-city {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .weather-app-details {
   font-size: 18px;
   color: #666;
+  line-height: 1.4;
 }
+
 
 .weather-app-details strong,
 .weather-app-details span {
