@@ -1,112 +1,37 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background: #f6f3ff;
-  padding: 40px 20px;
-  margin: 0;
-}
-
-.weather-pro-vanilla {
-  max-width: 700px;
-  margin: 0 auto;
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
-
-.search-form {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.search-form-input {
-  flex: 1;
-  padding: 14px 18px;
-  border-radius: 10px;
-  border: 1px solid #eee;
-  background: #eef3ff;
-  font-size: 18px;
-}
-
-.search-form-button {
-  background: #8a63f8;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.weather-app-data {
+.weather-forecast {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 40px;
+  gap: 10px;
 }
 
-
-
-.weather-app-city {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  margin: 0 0 10px;
+.weather-forecast-day {
+  background: #f6f3ff;
+  border-radius: 16px;
+  padding: 15px 10px;
+  text-align: center;
+  flex: 1;
 }
 
-.weather-app-details {
-  font-size: 18px;
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: 500;
   color: #666;
-  line-height: 1.4;
+  margin-bottom: 10px;
 }
 
-
-.weather-app-details strong,
-.weather-app-details span {
-  color: #d9539c;
-  font-weight: 500;
+.weather-forecast-icon {
+  width: 48px;
+  margin-bottom: 10px;
 }
 
-
-.weather-app-temperature-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: flex-end;
-  min-width: 200px; 
-}
-
-
-.weather-app-icon img {
-  width: 70px;
-}
-
-.weather-app-temperature {
-  font-size: 80px;
-  font-weight: 700;
-}
-
-.weather-app-unit {
-  font-size: 32px;
-  font-weight: 500;
+.weather-forecast-temperatures {
+  font-size: 16px;
   color: #333;
 }
 
-.temp-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 4px;
-}
-
-
-
-footer {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-footer a {
-  color: #8a63f8;
+.weather-forecast-temperatures strong {
+  color: #d9539c;
+  font-weight: 600;
+  margin-right: 6px;
 }
