@@ -29,26 +29,26 @@
       </form>
     </header>
 
-    <main>
-      <div class="weather-app-data">
-
-        <div>
-          <h1 id="city" class="weather-app-city">City</h1>
-          <p class="weather-app-details" id="details"></p>
+        <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-
-      
-       <div class="weather-app-temperature-container">
-  <div class="weather-app-icon" id="icon"></div>
-  <div class="temp-wrapper">
-    <span id="temperature" class="weather-app-temperature">0</span>
-    <span class="weather-app-unit">°C</span>
-  </div>
-</div>
-
-
-      </div>
-    </main>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
 
     <footer>
       This project was coded by
@@ -60,10 +60,10 @@
       and
       <a href="https://admirable-alpaca-12c8f2.netlify.app/?" target="_blank"
         >hosted on Netlify</a
-      >.
+      >
     </footer>
-  </div>
 
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="src/index.js"></script>
 </body>
